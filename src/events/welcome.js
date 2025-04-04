@@ -2,7 +2,7 @@ module.exports = {
     name: "guildMemberAdd",
     async execute(member) {
 
-        if (member.bot) return;
+        if (member.user.bot) return;
 
         const memberRole = await member.guild.roles.cache.find(role => role.id === '1246702854568153129');
         //const OGRole = await member.guild.roles.cache.find(role => role.id === '1280059486454681623');
