@@ -9,7 +9,7 @@ module.exports = {
     async execute (interaction, client) {
         const { options } = interaction;
         const confession = options.getString("confession");
-        const confesschannel = await client.channels.fetch("1295575217195843584");
+        const confesschannel = await client.channels.fetch("1371302102533537832");
 
         const embed = new EmbedBuilder()
         .setColor(0x0e1433)
